@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- UNICONS -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="">
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- JS -->
+        <script defer src="assets/js/main1.js" language="javascript" type="text/javascript"></script>
+        <script src="assets/js/mixitup.min.js"></script>
+        <title>Proyecto Reservas</title>
+    </head>
+    <body>
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="index.html" class="nav__logo-text">
+                        <img src="assets/img/logo-small.png" alt="" class="logo__img"></a>
+                </div>
+                <div class="nav__menu">
+                    <div class="menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#inicio" class="nav__link active-link">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#cabanas" class="nav__link">Cabañas</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#servicios" class="nav__link">Servicios</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#cercanias" class="nav__link">Cercanías</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contacto" class="nav__link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn__share">
+                    <i class="uil uil-share-alt social__share"></i>
+                </div>
+            </nav>
+        </aside>
+<!-- MAIN -->
+<main class="main">
+    <!-- Home -->
+    <section class="home" id="inicio">
+        <div class="home__container container grid">
+               <img src="assets/img/inicio.png" alt="" class="home__img">
+               <div class="home__data">
+                   <h1 class="home__title">Valacirca Cabañas</h1>
+                   <h3 class="home__subtitle"> Aca va una pequeña frase piola</h3>
+                   <p class="home__description">Acá aun no sé si voy a poner algo porque no quiero tapar
+                    tanto la imagen de atrás, pero probanding.. </p>
+                    <a href="#contacto" class="button"><i class="iul iul-user button__icon"></i>
+                    Reservá aquí
+                    </a>
+               </div>
+               <div class="my__info">
+                <div class="info__item">
+                    <i class="uil uil-whatsapp info__icon"></i>
+                    <div>
+                        <h3 class="info__title">WhatsApp</h3>
+                        <span class="info__subtitle">+56 9 99804982</span>
+                    </div>
+                </div>
+                <div class="info__item">
+                    <i class="uil uil-envelope-edit info__icon"></i>
+                    <div>
+                        <h3 class="info__title">Correo</h3>
+                        <span class="info__subtitle">contacto@valacirca.cl</span>
+                    </div>
+                </div>
+    </div>
+</section>
+        
+    <!------- CABAÑAS ------->
+<section class="cabana section" id="cabanas">
+            <h2 data-heading="Complejo Valacirca" class="section__title">Nuestras cabañas</h2>
+    <div class="cabana__filters">
+      <span class="cabana__item active-cabana" data-filter="all">Ver todas</span> 
+      <span class="cabana__item" data-filter=".cincoPe">5 personas</span>
+      <span class="cabana__item" data-filter=".seisPe">6 personas</span>
+      <span class="cabana__item" data-filter=".sietePe">7 personas</span>
+      <span class="cabana__item" data-filter=".ochoPe">8 personas</span> 
+    </div>
+
+    <div class="cabana__container container grid"> 
+
+    <div class="cabana__card mix cincoPe">
+        <img src="assets/img/merak.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Merak</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+            <h3 class="details__title">Cabaña Merak</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 5 personas </span></li> 
+                        <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li>
+                </ul> 
+        </div> 
+    </div> 
+
+    <div class="cabana__card mix seisPe">
+        <img src="assets/img/megrez.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Megrez</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+            <h3 class="details__title">Cabaña Megrez</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 6 personas </span></li> 
+                        <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li> 
+                </ul> 
+        </div> 
+    </div> 
+
+    <div class="cabana__card mix seisPe">
+        <img src="assets/img/phecda.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Phecda</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+            <h3 class="details__title">Cabaña Phecda</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 6 personas </span></li> 
+                        <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li>
+                </ul>  
+        </div> 
+    </div> 
+
+    <div class="cabana__card mix sietePe">
+        <img src="assets/img/dubhe.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Dubhe</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+            <h3 class="details__title">Cabaña Dubhe</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 7 personas </span></li> 
+                    <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li> 
+                </ul> 
+        </div> 
+    </div> 
+
+    <div class="cabana__card mix ochoPe">
+        <img src="assets/img/mizar.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Mizar</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+            <h3 class="details__title">Cabaña Mizar</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 8 personas </span></li> 
+                    <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li>
+                </ul>  
+        </div> 
+    </div> 
+
+    <div class="cabana__card mix ochoPe">
+        <img src="assets/img/alioth.png" alt="" class="cabana__img"> 
+            <h3 class="cabana__title">Cabaña Alioth</h3> 
+            <span class="cabana__button">Ver más
+            <i class="uil uil-arrow-right cabana__button-icon"></i> 
+            </span> 
+        <div class="cabana__item-details">
+                <h3 class="details__title">Cabaña Alioth</h3> 
+                <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                <ul class="details__info">
+                    <li>Capacidad: <span> 8 personas </span></li> 
+                    <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li>
+                </ul>  
+        </div> 
+    </div> 
+
+    </div>
+</section>
+
+    <!----- Cabañas Pop-up ----->
+<div class="cabana__popup">
+    <div class="cabana__popup-inner">
+        <div class="cabana__popup-content grid">
+            <span class="cabana__popup-close"><i class="uil uil-times"></i></span>
+            <div class="cp__mini">
+                <img src="assets/img/merak/1.png" alt="" class="cabana__popup-img">
+            </div>
+            <div class="cabana__popup-info">
+                <div class="cabana__popup-subtitle">Conocé nuestra</div>
+                <div class="cabana__popup-body">
+                    <h3 class="details__title">Cabaña </h3> 
+                    <p class="details__description">Lorem ipsum, dolor sit amet consectetur Earum impedit voluptatibus minima.</p> 
+                    <ul class="details__info">
+                        <li>Capacidad: <span>X personas </span></li> 
+                        <li>Incluye:<span> vajilla, cocina equipada y ropa de cama </span></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- SERVICIOS -->
+    <section class="services section" id="servicios">
+        <h2 data-heading="Nuestros" class="section__title">Servicios incluidos</h2>
+                <div class="services__container container grid">
+            
+                    <div class="services__content">
+                        <div>
+                        <i class="uil uil-wifi services__icon"></i>
+                        <h3 class="services__title">Wi-fi y <br> TV cable</h3>
+                        </div>
+            
+                        <span class="services__description">
+                        En todo<br> el complejo </span>
+
+                    </div>
+                
+                    <div class="services__content">
+                        <div>
+                        <i class="uil uil-icons services__icon"></i>
+                        <h3 class="services__title">Juegos<br>infantiles</h3>
+                        </div>
+            
+                        <span class="services__description">
+                        Plaza de hamacas<br> y toboganes </span>
+                    </div>
+
+                    <div class="services__content">
+                        <div>
+                        <i class="uil uil-bed services__icon"></i>
+                        <h3 class="services__title">Blancos <br> de cama</h3>
+                        </div>
+            
+                        <span class="services__description">
+                        Sábanas y <br>toalla de mano </span>
+                    </div>
+
+                    <div class="services__content">
+                        <div>
+                        <i class="uil uil-utensils services__icon"></i>
+                        <h3 class="services__title">Salón<br>y parrilla</h3>
+                        </div>
+            
+                        <span class="services__description">
+                        Con mesa, sillas, <br> vajilla y toilette</span>
+                    </div>
+                
+                </div>
+
+    </section>
+    <!-- CERCANÍAS -->
+
+    
+    <!-- CONTACTO -->
+    <section class="contact section" id="contacto">
+        <h2 data-heading="Contactanos" class="section__title">Hacé tu reserva</h2>
+        <div class="contact__container container grid">
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="uil uil-envelope-edit contact__card-icon"></i>
+                        <h3 class="contact__card-title">Correo</h3>
+                        <span class="contact__card-data">contacto@valacirca.cl</span>
+                        <span class="contact__button">
+                        Envia tu consulta <i class="uil uil-arrow-right contact__button-icon"></i>     
+                        </span>
+                    </div>
+                    <div class="contact__card">
+                        <i class="uil uil-whatsapp contact__card-icon"></i>
+                        <h3 class="contact__card-title">WhatsApp</h3>
+                        <span class="contact__card-data">+56 9 99804982</span>
+                        <span class="contact__button">
+                        Contactanos <i class="uil uil-arrow-right contact__button-icon"></i>     
+                        </span>
+                    </div>
+                    <div class="contact__card">
+                        <i class="uil uil-instagram contact__card-icon"></i>
+                        <h3 class="contact__card-title">Instagram</h3>
+                        <span class="contact__card-data">@valacirca.cabanas</span>
+                        <span class="contact__button">
+                        Seguinos <i class="uil uil-arrow-right contact__button-icon"></i>     
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__content">
+                <form action="" class="contact__form">
+                    <div class="input__container">
+                        <input type="text" class="input" placeholder="Nombre y apellido">
+                        <label for="">Nombre y apellido</label>
+                        <span>Nombre y apellido</span>
+                    </div>
+                    <div class="input__container">
+                        <input type="text" class="input" placeholder="Email">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input__container">
+                        <input type="text" class="input" placeholder="Teléfono">
+                        <label for="">Teléfono</label>
+                        <span>Teléfono</span>
+                    </div>
+                    <div class="input__container">
+                        <label for=""><select name="input__cabana" id="input__cabana">
+                            <option value="no-cabaña">Elegir</option>
+                            <option value="merak-5">Merak</option>
+                            <option value="megrez-6">Megrez</option>
+                            <option value="phecda-6">Phecda</option>
+                            <option value="dubhe-7">Dubhe</option>
+                            <option value="mizar-8">Mizar</option>
+                            <option value="alioth-8">Alioth</option>
+                          </select></label>
+                        <span>Elija su cabaña</span>
+                    </div>
+                    <div class="input__container">
+                        <label for=""><select name="cant__personas" id="cant__personas">
+                            <option value="0">Indicar</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="7">7 personas</option>
+                            <option value="8">8 personas</option>
+                          </select></label>
+                        <span>Cantidad de personas</span>
+                    </div>
+                    <div class="input__container">
+                        <span>Por último, indique las fechas de su estadía: <br><span>
+                            <span>Check in:</span>
+                            <input type="date" class="input" id="date1">
+                        <label for=""></label>
+                        
+                    </div>
+                    <div class="input__container">
+                        <span>Check out:</span>
+                        <input type="date" class="input" id="date2">
+                        <label for=""></label>
+                    </div>
+                        <button class="button"><i class="iul iul-navigator button__icon"></i>
+                        Reservar </a>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+        
+    </body>
+</html>
